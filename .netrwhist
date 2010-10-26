@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/Applications/MAMP/htdocs/jobfair'
 let g:netrw_dirhist_2='/Applications/MAMP/htdocs/pfp-track-2'
 let g:netrw_dirhist_3='/Applications/MAMP/htdocs/forge3'
 let g:netrw_dirhist_4='/Applications/MAMP/htdocs/forge'
+let g:netrw_dirhist_5='/Applications/MAMP/htdocs/perceptor'
