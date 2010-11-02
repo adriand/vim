@@ -1,7 +1,4 @@
 set hidden															"manage buffers better
-"swap these keys
-nnoremap ' ` 
-nnoremap ` '
 let mapleader = ","											"set my leader key to ,
 set history=1000												"set the command buffer to something better
 runtime macros/matchit.vim							"load the matchit plugin
