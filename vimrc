@@ -29,3 +29,4 @@ set expandtab														"use spaces instead of tabs
 set nowrap                              "turn off word wrap
 call pathogen#runtime_append_all_bundles()  "pathogen: http://www.vim.org/scripts/script.php?script_id=2332
 set nocompatible                        "we don't need vi compatibility - it's 2010
+let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'        "hide dot files in netrw
