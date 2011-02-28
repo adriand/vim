@@ -30,3 +30,7 @@ set nowrap                              "turn off word wrap
 call pathogen#runtime_append_all_bundles()  "pathogen: http://www.vim.org/scripts/script.php?script_id=2332
 set nocompatible                        "we don't need vi compatibility - it's 2010
 let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'        "hide dot files in netrw
+set vb t_vb=                            "turn off the annoying beeps when cmds don't work
+"I can't get the below to work right
+:command Text set spell | set linebreak | set wrap "quick settings for text editing
+set guioptions-=T                       "turn off the GUI
