@@ -34,3 +34,6 @@ set vb t_vb=                            "turn off the annoying beeps when cmds d
 :command Text set spell | set linebreak | set wrap "quick settings for text editing
 set guioptions-=T                       "turn off the GUI
 :command Cfl CommandTFlush              "short cut for Command-T Flush
+
+"ignore certain files with Command-T, etc.:
+set wildignore=public/images/**,public/javascripts/ckeditor,tmp/**,public/system/**
