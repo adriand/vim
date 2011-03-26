@@ -36,4 +36,4 @@ set guioptions-=T                       "turn off the GUI
 :command Cfl CommandTFlush              "short cut for Command-T Flush
 
 "ignore certain files with Command-T, etc.:
-set wildignore=public/images/**,public/javascripts/ckeditor,tmp/**,public/system/**
+set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/system/**,public/javascripts/fckeditor/**
