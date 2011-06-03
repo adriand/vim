@@ -37,3 +37,6 @@ set guioptions-=T                       "turn off the GUI
 
 "ignore certain files with Command-T, etc.:
 set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/system/**,public/javascripts/fckeditor/**
+
+:command Fu set fuopt+=maxhorz | set fu
+:command Nofu set nofu
