@@ -30,11 +30,10 @@ set expandtab														"use spaces instead of tabs
 set nowrap                              "turn off word wrap
 set nocompatible                        "we don't need vi compatibility - it's 2010
 let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'        "hide dot files in netrw
-set vb t_vb=                            "turn off the annoying beeps when cmds don't work
-:command Text set spell | set linebreak | set wrap "quick settings for text editing
+set visualbell                          " use visual bell instead of an audible beep
 set guioptions-=T                       "turn off the GUI
 :command Cfl CommandTFlush              "short cut for Command-T Flush
-
+:command Text set spell | set linebreak | set wrap "quick settings for text editing
 "ignore certain files with Command-T, etc.:
 set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/system/**,public/javascripts/fckeditor/**
 
