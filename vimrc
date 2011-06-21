@@ -20,7 +20,7 @@ filetype plugin on											"something...
 filetype indent on											"indent based on filetype
 set incsearch														"search dynamically, as you type
 set background=dark											"set the background dark
-colorscheme mustang	  								  "set the colours 
+colorscheme molokai	  								  "set the colours 
 set guifont=Inconsolata:h15							"set the font:font size
 set smarttab														"set smart tabs
 set shiftwidth=2												"when selecting text, understand indenting
