@@ -36,6 +36,9 @@ set guioptions-=T                       "turn off the GUI
 :command Text set spell | set linebreak | set wrap "quick settings for text editing
 "ignore certain files with Command-T, etc.:
 set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/system/**,public/javascripts/fckeditor/**
+if has('gui_running')
+  set columns=130 lines=55              "set the window size
+endif
 
 :command Fu set fuopt+=maxhorz | set fu
 :command Nofu set nofu
