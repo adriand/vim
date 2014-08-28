@@ -1,6 +1,7 @@
-call pathogen#runtime_append_all_bundles()  "pathogen: http://www.vim.org/scripts/script.php?script_id=2332
+execute pathogen#infect()
 set hidden															"manage buffers better
 let mapleader = ","		  								"set my leader key to ,
+nnoremap <leader>t :CtrlP<CR>
 set history=1000												"set the command buffer to something better
 runtime macros/matchit.vim							"load the matchit plugin
 set wildmenu														"when matching commands, show a menu
@@ -29,16 +30,11 @@ set tabstop=2														"set tabs at 2 (so they line up)
 set expandtab														"use spaces instead of tabs
 set nowrap                              "turn off word wrap
 set nocompatible                        "we don't need vi compatibility - it's 2010
-let g:netrw_list_hide= '\(^\|\s\s\)\zs\.\S\+'        "hide dot files in netrw
 set visualbell                          " use visual bell instead of an audible beep
 set guioptions-=T                       "turn off the GUI
-:command Cfl CommandTFlush              "short cut for Command-T Flush
 :command Text set spell | set linebreak | set wrap "quick settings for text editing
 "ignore certain files with Command-T, etc.:
 set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/system/**,public/javascripts/fckeditor/**
 if has('gui_running')
   set columns=130 lines=55              "set the window size
 endif
-
-:command Fu set fuopt+=maxhorz | set fu
-:command Nofu set nofu
