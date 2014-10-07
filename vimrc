@@ -38,3 +38,6 @@ set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/sys
 if has('gui_running')
   set columns=130 lines=55              "set the window size
 endif
+set ttyfast                             "faster chars
+set mouse=a                             "use mouse in all modes
+set shortmess+=A                        "do not complain about swap files
