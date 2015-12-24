@@ -29,7 +29,6 @@ set softtabstop=2												"set soft tabs to 2
 set tabstop=2														"set tabs at 2 (so they line up)
 set expandtab														"use spaces instead of tabs
 set nowrap                              "turn off word wrap
-set nocompatible                        "we don't need vi compatibility - it's 2010
 set visualbell                          " use visual bell instead of an audible beep
 set guioptions-=T                       "turn off the GUI
 :command Text set spell | set linebreak | set wrap "quick settings for text editing
@@ -38,6 +37,18 @@ set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/sys
 if has('gui_running')
   set columns=130 lines=55              "set the window size
 endif
-set ttyfast                             "faster chars
-set mouse=a                             "use mouse in all modes
 set shortmess+=A                        "do not complain about swap files
+
+" syntastic linters
+let g:syntastic_ruby_checkers = ['rubocop']
+let g:syntastic_ruby_rubocop_exec = '~/scripts/rubocop'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+if has("balloon_eval")
+  set noballooneval       " disable vim-ruby's annoying tooltip
+endif
