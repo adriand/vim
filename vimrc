@@ -35,6 +35,14 @@ set guioptions-=T                       "turn off the GUI
 :command Text set spell | set linebreak | set wrap "quick settings for text editing
 "ignore certain files with Command-T, etc.:
 set wildignore=public/images/**,public/javascripts/ckeditor/**,tmp/**,public/system/**,public/javascripts/fckeditor/**
+let g:ctrlp_max_files=50000
+let g:ctrlp_custom_ignore='.git$|\tmp$'
+let g:ctrlp_user_command = {
+      \ 'types': {
+      \   1: ['.git/', 'cd %s && git ls-files']
+      \   },
+      \ 'fallback': 'find %s -type f'
+      \ }
 if has('gui_running')
   set columns=130 lines=55              "set the window size
 endif
