@@ -55,6 +55,7 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_wq = 0
+:command Check SyntasticCheck "quicker way to check a file
 
 if has("balloon_eval")
   set noballooneval       " disable vim-ruby's annoying tooltip
