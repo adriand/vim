@@ -47,16 +47,6 @@ if has('gui_running')
 endif
 set shortmess+=A                        "do not complain about swap files
 
-" syntastic linters
-let g:syntastic_ruby_checkers = ['rubocop']
-let g:syntastic_ruby_rubocop_exec = '~/scripts/rubocop'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_check_on_wq = 0
-:command Check SyntasticCheck "quicker way to check a file
-
 if has("balloon_eval")
   set noballooneval       " disable vim-ruby's annoying tooltip
 endif
