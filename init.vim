@@ -1,1 +1,0 @@
-/Users/adrianduyzer/.vim/vimrc
